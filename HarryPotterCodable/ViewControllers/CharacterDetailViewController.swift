@@ -32,7 +32,6 @@ class CharacterDetailViewController: UIViewController {
             self.houseLabel.text = character.house
             self.patronusLabel.text = character.patronus
             self.imageView.image = character.image
-            
         }
     }
 }
