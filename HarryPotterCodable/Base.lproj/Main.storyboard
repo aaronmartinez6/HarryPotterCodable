@@ -70,7 +70,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-mR-gH5">
                                 <rect key="frame" x="16" y="299" width="288" height="165"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zS1-v2-Tr8" userLabel="(Name)">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zS1-v2-Tr8" userLabel="Name Label">
                                         <rect key="frame" x="115.5" y="0.0" width="57.5" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -103,6 +103,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rEB-da-hI0"/>
                     </view>
+                    <connections>
+                        <outlet property="houseLabel" destination="tB5-uX-0Up" id="ghX-u0-YSu"/>
+                        <outlet property="imageView" destination="goB-ND-sEc" id="4hZ-5P-1gM"/>
+                        <outlet property="nameLabel" destination="zS1-v2-Tr8" id="Yb5-iU-Tkm"/>
+                        <outlet property="patronusLabel" destination="oFJ-mK-vMd" id="NnV-Jf-uzl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i5P-l3-299" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

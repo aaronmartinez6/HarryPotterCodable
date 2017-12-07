@@ -13,6 +13,8 @@
 		935FDACE1FD743FD004222F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 935FDACC1FD743FD004222F2 /* LaunchScreen.storyboard */; };
 		935FDAD61FD76171004222F2 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FDAD51FD76171004222F2 /* CharacterDetailViewController.swift */; };
 		935FDAD81FD76192004222F2 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FDAD71FD76192004222F2 /* CharactersTableViewController.swift */; };
+		935FDADA1FD76225004222F2 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FDAD91FD76225004222F2 /* Character.swift */; };
+		935FDADC1FD762AD004222F2 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935FDADB1FD762AD004222F2 /* CharacterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		935FDACF1FD743FD004222F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		935FDAD51FD76171004222F2 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 		935FDAD71FD76192004222F2 /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewController.swift; sourceTree = "<group>"; };
+		935FDAD91FD76225004222F2 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		935FDADB1FD762AD004222F2 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				935FDAC31FD743FD004222F2 /* AppDelegate.swift */,
 				935FDAC71FD743FD004222F2 /* Main.storyboard */,
+				935FDAD91FD76225004222F2 /* Character.swift */,
+				935FDADB1FD762AD004222F2 /* CharacterController.swift */,
 				935FDAD51FD76171004222F2 /* CharacterDetailViewController.swift */,
 				935FDAD71FD76192004222F2 /* CharactersTableViewController.swift */,
 				935FDACA1FD743FD004222F2 /* Assets.xcassets */,
@@ -142,6 +148,8 @@
 				935FDAC41FD743FD004222F2 /* AppDelegate.swift in Sources */,
 				935FDAD81FD76192004222F2 /* CharactersTableViewController.swift in Sources */,
 				935FDAD61FD76171004222F2 /* CharacterDetailViewController.swift in Sources */,
+				935FDADC1FD762AD004222F2 /* CharacterController.swift in Sources */,
+				935FDADA1FD76225004222F2 /* Character.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
