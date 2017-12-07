@@ -62,28 +62,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="goB-ND-sEc">
-                                <rect key="frame" x="80" y="79" width="160" height="200"/>
+                                <rect key="frame" x="32" y="79" width="256" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="goB-ND-sEc" secondAttribute="height" multiplier="4:5" id="3VD-9D-KYH"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jVP-mR-gH5">
-                                <rect key="frame" x="16" y="299" width="288" height="165"/>
+                                <rect key="frame" x="16" y="419" width="288" height="45"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zS1-v2-Tr8" userLabel="Name Label">
-                                        <rect key="frame" x="115.5" y="0.0" width="57.5" height="55"/>
+                                        <rect key="frame" x="115.5" y="0.0" width="57.5" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(House)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB5-uX-0Up">
-                                        <rect key="frame" x="113.5" y="55" width="61.5" height="55"/>
+                                        <rect key="frame" x="113.5" y="15" width="61.5" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Patronus)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFJ-mK-vMd">
-                                        <rect key="frame" x="104" y="110" width="80.5" height="55"/>
+                                        <rect key="frame" x="104" y="30" width="80.5" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
                             <constraint firstItem="rEB-da-hI0" firstAttribute="trailing" secondItem="jVP-mR-gH5" secondAttribute="trailing" constant="16" id="ePL-mw-tvH"/>
                             <constraint firstItem="jVP-mR-gH5" firstAttribute="top" secondItem="goB-ND-sEc" secondAttribute="bottom" constant="20" id="fDb-NC-I2Y"/>
                             <constraint firstItem="jVP-mR-gH5" firstAttribute="leading" secondItem="rEB-da-hI0" secondAttribute="leading" constant="16" id="h4Z-bd-vp0"/>
-                            <constraint firstItem="goB-ND-sEc" firstAttribute="width" secondItem="rEB-da-hI0" secondAttribute="width" multiplier="0.5" id="hL8-LM-TrT"/>
+                            <constraint firstItem="goB-ND-sEc" firstAttribute="width" secondItem="rEB-da-hI0" secondAttribute="width" multiplier="0.8" id="hL8-LM-TrT"/>
                             <constraint firstItem="goB-ND-sEc" firstAttribute="centerX" secondItem="uGA-ru-3P7" secondAttribute="centerX" id="oAJ-4d-jtc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rEB-da-hI0"/>

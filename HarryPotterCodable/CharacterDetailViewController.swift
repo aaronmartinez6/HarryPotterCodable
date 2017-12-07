@@ -15,7 +15,7 @@ class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var houseLabel: UILabel!
     @IBOutlet weak var patronusLabel: UILabel!
     
-    var actualCharacter: ActualCharacter?
+    var character: Character?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +24,14 @@ class CharacterDetailViewController: UIViewController {
     }
     
     func updateViews() {
-        guard let actualCharacter = actualCharacter
+        guard let character = character
         else { print("The character property in the \(#function) was nil"); return }
         
         DispatchQueue.main.async {
-            self.nameLabel.text = actualCharacter.character.name
-            self.houseLabel.text = actualCharacter.character.house
-            self.patronusLabel.text = actualCharacter.character.patronus
-            self.imageView.image = actualCharacter.image
+            self.nameLabel.text = character.name
+            self.houseLabel.text = character.house
+            self.patronusLabel.text = character.patronus
+            self.imageView.image = character.image
             
         }
     }

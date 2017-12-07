@@ -32,9 +32,9 @@ class CharactersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CharacterCell", for: indexPath)
 
-        let actualCharacter = CharacterController.shared.characters[indexPath.row]
+        let character = CharacterController.shared.characters[indexPath.row]
         
-        cell.textLabel?.text = actualCharacter.character.name
+        cell.textLabel?.text = character.name
 
         return cell
     }
@@ -46,8 +46,8 @@ class CharactersTableViewController: UITableViewController {
             guard let destination = segue.destination as? CharacterDetailViewController,
                 let indexPath = tableView.indexPathForSelectedRow
                 else { return }
-            let actualCharacter = CharacterController.shared.characters[indexPath.row]
-            destination.actualCharacter = actualCharacter
+            let character = CharacterController.shared.characters[indexPath.row]
+            destination.character = character
         }
     }
 }

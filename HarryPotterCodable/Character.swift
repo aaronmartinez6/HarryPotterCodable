@@ -23,8 +23,3 @@ struct Character: Decodable {
     let imageURL: String
     var image: UIImage? = nil
 }
-
-struct ActualCharacter {
-    var image: UIImage?
-    var character: Character
-}

@@ -12,7 +12,7 @@ class CharacterController {
     
     static let shared = CharacterController()
     
-    var characters: [ActualCharacter] = []
+    var characters: [Character] = []
     
     let charactersURL = URL(string: "http://hp-api.herokuapp.com/api/characters")!
     
@@ -38,15 +38,16 @@ class CharacterController {
                 print("There was an error decoding the data into characters: \(error.localizedDescription)")
             }
             
-            var charactersWithImages = [ActualCharacter]()
+            var charactersWithImages = [Character]()
             
             let group = DispatchGroup()
             for character in charactersWithoutImages {
                 group.enter()
                 guard let url = URL(string: character.imageURL) else { completion(); return }
                 self.fetchImage(at: url, completion: { (image) in
-                    let actualCharacter = ActualCharacter(image: image, character: character)
-                    charactersWithImages.append(actualCharacter)
+                    var character = character
+                    character.image = image
+                    charactersWithImages.append(character)
                     group.leave()
                 })
             }
